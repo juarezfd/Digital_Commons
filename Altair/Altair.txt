@@ -1,0 +1,49 @@
+Introduction to Altair in Python
+
+Altair is a statistically visualization library in Python.
+Declarative in nature and based on Vega and Vega-lite JSON visualization grammars.
+Easy choice for quick and efficient way to visualize datasets. 
+With Altair, you can spend more time understanding your data and its meaning.
+
+Structurally different from MatPlotLib, an imparative visualization library.
+In computer science, declarative programming is a programming paradigm style of 
+building the structure and elements of computer programs that expresses the logic of a 
+computation without describing its control flow.
+
+Declarative programs describe what is accomplished rather than describing how to do something
+	- e.g., SQL (i.e., database query language), regular expressions, logic programming, functional programming
+Declarative:
+	- Declarative code is where you say what you want done. The system assumes some steps through backend code.
+	- what this looks like in DataViz is you asking it to make a line graphe giving it data that is in the 
+	x-axis vs y-axis. You need your data in a format that the language recognizes.
+
+Imperative:
+	- imperative code is where you explicitly spell out each step of how you want something done. 
+	the program wont assume anythig for you
+	- 
+	- what this will look like is in DataViz is you super imposing various different aspects of a graph (i.e., axis, scale, type bar/line, title, legend, etc)
+
+Explaining Altair
+
+Data
+The dataset is the first argument that you pass to the chart. 
+Data in Altair is built around the Pandas Dataframe so the encoding becomes 
+quite simple and it is able to detect the data types required in the encoding 
+but you can also use the following for the data:
+
+- A Data or related object such as UrlData, InlineData, NamedData
+- A json or csv formatted text file or url
+- An object that supports the __geo_interface__(eg. Geopandas GeoDataFrame, GeoJSON Objects)
+
+Using DataFrames will make the process easier, so you should use DataFrames wherever possible.
+
+Altair works well with Pandas for anyone looking for a reason to combine data analyzing with DataViz
+compliment one another well
+
+Altair uses Vega and VegaLite in the backend which deals with JSON. Meaning that these plots you create are 
+already in a format ready to publish online in a site if possible through JavaScript embedding
+
+JS is a core programming language of the WWW alongside HTML and CSS. 
+Over 97% of sites use JS on the client side for the webpage.
+All web browsers have a dedicated JS engine to execute the code on the user's device
+
